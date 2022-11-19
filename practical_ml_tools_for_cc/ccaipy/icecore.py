@@ -14,7 +14,7 @@ def load_data():
     keys = ['depth', 'age_ice', 'age_air', 'co2']
     
     # Use the file name from the earlier wget command for the 2003 data
-    icecore_fname = '/content/drive/My Drive/ccai/course/icecore/vostok.icecore.co2'
+    icecore_fname = '/content/drive/My Drive/LEADS Summer School 2022 -- Climate Change AI/course/icecore/vostok.icecore.co2'
     icecore_data[year] = utilities.read_text_file(icecore_fname, skiprows=skiprows, keys=keys)
     
     year = 1999
@@ -22,7 +22,7 @@ def load_data():
     keys = ['depth', 'age_ice', 'deuterium', 'temp_variation']
     
     # Use the file name from the earlier wget command for the 1999 data
-    icecore_fname = '/content/drive/My Drive/ccai/course/icecore/vostok.1999.temp.dat'
+    icecore_fname = '/content/drive/My Drive/LEADS Summer School 2022 -- Climate Change AI/course/icecore/vostok.1999.temp.dat'
     icecore_data[year] = utilities.read_text_file(icecore_fname, skiprows=skiprows, keys=keys)
     
     return icecore_data
